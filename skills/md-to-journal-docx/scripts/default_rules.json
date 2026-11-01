@@ -1,0 +1,50 @@
+{
+  "_comment": "Neutral defaults. A journal profile overrides them in profile.json \"rules\"; a paper may override again in paper_overrides.json \"rules\". Objects merge key by key; arrays and scalars replace. Every key is documented in references/rules.md.",
+  "markdown": {
+    "body_start_pattern": "^##\\s+\\S",
+    "heading_roles": { "1": "section_heading", "2": "subsection_heading", "3": "third_level_heading" },
+    "references_heading_pattern": "^(References|Bibliography|参考文献)$",
+    "appendix_heading_pattern": "^(Appendix|附录)",
+    "figure_words": ["Figure", "Fig.", "图"],
+    "table_words": ["Table", "表"],
+    "table_note_pattern": "^(Notes?|注)[：:.]",
+    "citation_pattern": "\\[(?:\\d+(?:\\s*[-–,，]\\s*\\d+)*)\\]",
+    "citation_superscript": true,
+    "citation_baseline_after_pattern": null,
+    "italic_token_pattern": null
+  },
+  "front_matter": {
+    "roles": [
+      { "role": "title", "match": "^#\\s+(.+)$", "required": true }
+    ],
+    "render_order": ["title"],
+    "render": { "title": { "align": "center", "keep_next": true } },
+    "missing_text": "TBD",
+    "label_separator": " ",
+    "document_title_role": "title"
+  },
+  "body_roles": {
+    "body": "body",
+    "references_heading": "references_heading",
+    "reference_entry": "reference_entry",
+    "figure_caption": "figure_caption",
+    "table_caption": "table_caption",
+    "figure_caption_secondary": "figure_caption_secondary",
+    "table_caption_secondary": "table_caption_secondary"
+  },
+  "captions": {
+    "secondary_format": { "figures": "Figure {n}  {title}", "tables": "Table {n}  {title}" },
+    "note_size_pt": 8,
+    "line_spacing": 1.15
+  },
+  "tables": {
+    "font_size_pt": null,
+    "cell_padding_top_bottom_twips": 20,
+    "cell_side_margin_twips": { "column": 30, "full": 65 },
+    "rule_sizes_eighth_pt": { "outer": 12, "header": 6 }
+  },
+  "paragraphs": { "body_first_line_chars": 2, "line_spacing": 1.15, "equation_line_spacing": 1, "reference_line_spacing": 1 },
+  "references": { "hanging_indent_twips": 300 },
+  "sections": { "front": null, "body": null, "tail": null },
+  "author_info_placeholder": null
+}

@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: converts-mixed-omml-equations
+expected_outcome: |
+  equations_sample_mathtype.docx exists next to the input. Its word/document.xml contains no
+  m:oMath elements and exactly 26 MathType OLE objects (ProgID="Equation.DSMT4"), one per original
+  equation (3 display, 23 inline), with the 26 equation bookmarks kept and the surrounding text
+  unchanged. equations_sample.docx is unchanged. The reply reports the counts and asks the user to
+  double-click an equation in WPS to confirm it opens in MathType.
+context:
+  scaffold_script: place-files.sh

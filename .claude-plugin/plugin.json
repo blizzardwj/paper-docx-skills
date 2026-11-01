@@ -1,0 +1,8 @@
+{
+  "name": "paper-docx-skills",
+  "version": "0.3.0",
+  "description": "Markdown paper -> journal-formatted DOCX with Word-native equations (plain or from a journal template), and Word-native equations -> MathType objects. Windows, WPS Office or Word.",
+  "author": { "name": "Joseph" },
+  "license": "MIT",
+  "keywords": ["markdown", "docx", "wps", "mathtype", "omml", "journal", "typesetting"]
+}

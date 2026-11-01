@@ -1,0 +1,11 @@
+{
+  "name": "paper-docx-skills",
+  "owner": { "name": "Joseph" },
+  "plugins": [
+    {
+      "name": "paper-docx-skills",
+      "source": "./",
+      "description": "Markdown paper -> journal-formatted DOCX with Word-native equations, and Word-native equations -> MathType objects (Windows, WPS Office or Word)."
+    }
+  ]
+}

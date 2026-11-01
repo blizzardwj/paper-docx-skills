@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: converts-without-template
+expected_outcome: |
+  notes.docx exists next to the input, made in plain mode (no template, no journal profile) and
+  native-saved through WPS (or Word). It contains 5 Word-native equations (1 display, 4 inline, one
+  of them inside a table cell), 1 table with grid lines, the picture, and no raw "$" or LaTeX text.
+  notes.md is unchanged. The reply says no template was used and that the pages were reviewed.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# journal profiles contain the journal's template; keep them local
+skills/md-to-journal-docx/profiles/*/
